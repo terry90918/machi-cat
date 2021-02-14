@@ -11,9 +11,7 @@ router.get('/', (req, res, next) => {
     .catch((error) => {
       console.log(error);
     }) */
-  res
-    .status(500)
-    .json(farmStay);
+  res.json(farmStay);
 });
 
 module.exports = router;
