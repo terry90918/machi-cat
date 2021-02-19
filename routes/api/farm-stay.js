@@ -14,4 +14,14 @@ router.get('/', (req, res, next) => {
   res.json(farmStay);
 });
 
+/**
+ * 取得一筆資料
+ */
+router.get('/:id', (req, res, next) => {
+  const item = farmStay.find((i) => {
+    return i.ID === req.params.id
+  })
+  res.json(item);
+});
+
 module.exports = router;
