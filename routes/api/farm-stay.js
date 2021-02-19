@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
  */
 router.get('/:id', (req, res, next) => {
   const item = farmStay.find((i) => {
-    return i.ID === req.params.id
+    return i.ID === Number(req.params.id)
   })
   res.json(item);
 });
