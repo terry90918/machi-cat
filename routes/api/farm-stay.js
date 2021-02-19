@@ -1,7 +1,7 @@
-// var axios = require('axios');
-var express = require('express');
-var router = express.Router();
-var farmStay = require('../../database/farm-stay.json')
+// const axios = require('axios');
+const express = require('express');
+const router = express.Router();
+const farmStay = require('../../database/farm-stay.json')
 
 /**
  * 取得列表
