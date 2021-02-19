@@ -3,6 +3,9 @@ var express = require('express');
 var router = express.Router();
 var farmStay = require('../../database/farm-stay.json')
 
+/**
+ * 取得列表
+ */
 router.get('/', (req, res, next) => {
   /* axios.get('https://ezgo.coa.gov.tw/API/FarmStay?lang=zh-TW')
     .then((response) => {
