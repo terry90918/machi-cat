@@ -14,6 +14,7 @@ router.get('/', (req, res, next) => {
     .catch((error) => {
       console.log(error);
     }) */
+  farmStay.length = 100
   res.json(farmStay);
 });
 
