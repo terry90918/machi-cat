@@ -8,6 +8,7 @@ const cors = require('cors')
 
 const indexRouter = require('./routes/index');
 const farmStayRouter = require('./routes/api/farm-stay');
+const ordersRouter = require('./routes/api/orders');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/farm-stay', farmStayRouter);
+app.use('/api/orders', ordersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
