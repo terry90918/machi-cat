@@ -14,7 +14,8 @@ router.get('/', (req, res, next) => {
     .catch((error) => {
       console.log(error);
     }) */
-  farmStay.length = 100
+  const max = req.query.max || null
+  if (max) farmStay.length = max;
   res.json(farmStay);
 });
 
